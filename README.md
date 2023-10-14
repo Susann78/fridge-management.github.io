@@ -17,7 +17,8 @@ Die Datenstruktur wurde bereitgestellt.
 
 <br>
 
-Um das Projekt optisch interessanter zu gestalten, habe ich als potentiellen Kunden den Küchengerätehersteller `SMEG` gewählt, bekannt für seine Produkt-Designs im Retro-Look und einer großen Farbpalette der Geräte. Es wurde eine grafische Oberfläche designed, die übersichtlich die Funktionalitäten aufteilt und dem User zudem die Möglichkeit gibt, die Farbe seines Kühlschranks über einen `Color Picker` selbst einzustellen.<br>
+Um das Projekt optisch interessanter zu gestalten, habe ich als potentiellen Kunden den Küchengerätehersteller `SMEG` gewählt, bekannt für seine Produkt-Designs im Retro-Look und einer großen Farbpalette der Geräte. 
+Es wurde eine grafische Oberfläche designed, die übersichtlich die Funktionalitäten aufteilt und dem User zudem die Möglichkeit gibt, die Farbe seines Kühlschranks über einen `Color Picker` selbst einzustellen.<br>
 Die Farbauswahl wird anschließend im Local Storage gespeichert.
 <br>
 <br>
