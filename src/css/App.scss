@@ -1,0 +1,271 @@
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+  // background-image: url("../assets/fridge_app_bg_orange.jpg");
+  background-image: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.app {
+  .logo {
+    position: absolute;
+    top: 3rem;
+    left: 4.7rem;
+    width: 12.5vw;
+  }
+
+  ul {
+    position: absolute;
+    top: 10.5rem;
+    left: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 40vw;
+
+    h2 {
+      font-size: 1rem;
+      padding-bottom: 8px;
+      margin-right: 500px;
+    }
+
+    li {
+      list-style-type: none;
+      font-size: 0.9rem;
+      width: 8.1em;
+      height: 6.5em;
+      // border: 1px solid rgba(0, 0, 0, 0.5);
+      border: none;
+      background-color: rgba(31, 194, 216, 0.13);
+      border-radius: 5px;
+      margin: 20px 10px 20px 20px;
+      padding: 10px 0 0 12px;
+
+      .expired {
+        // color: rgb(145, 4, 4);
+        color: rgb(43, 185, 221);
+        font-weight: 700;
+      }
+
+      .blink {
+        animation: blink 1s linear infinite;
+      }
+
+      @keyframes blink {
+        0% {
+          opacity: 0;
+        }
+        40% {
+          opacity: 1;
+        }
+
+        70% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      p {
+        padding-bottom: 8px;
+      }
+
+      button {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        background-color: white;
+        margin-top: -90px;
+        margin-left: 85px;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        color: white;
+        background-color: black;
+      }
+    }
+  }
+}
+
+.form-wrapper {
+  position: absolute;
+  left: 4.2rem;
+  bottom: 4rem;
+  width: 37.7vw;
+}
+
+form {
+  display: flex;
+
+  input {
+    width: 10.4vw;
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    label {
+      padding-bottom: 20px;
+      margin-right: 10px;
+    }
+  }
+  .exp {
+    margin-left: -20px;
+  }
+
+  .volume {
+    margin-left: -70px;
+  }
+  .btn {
+    width: 60px;
+    margin-top: 25px;
+    margin-left: -17px;
+    background-color: white;
+    font-size: 0.9rem;
+    transition: 0.3s;
+  }
+
+  .btn:hover {
+    color: white;
+    background-color: black;
+  }
+}
+
+.fridge-organisation {
+  position: absolute;
+  bottom: 3rem;
+  right: 5rem;
+  display: flex;
+  flex-direction: column;
+
+  .btn-defrost {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+  }
+
+  .btn-defrost:hover {
+    background-color: rgb(175, 223, 235);
+    color: rgba(0, 0, 0, 0.849);
+  }
+
+  .btn-clean {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    border: 1px solid black;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 15px;
+    transition: 0.3s;
+  }
+
+  .btn-clean:hover {
+    background-color: rgb(175, 223, 235);
+    border: none;
+  }
+}
+
+.color-picker {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 2rem;
+  right: 2.9rem;
+}
+
+.color-picker-button {
+  padding: 12px 14px;
+  background-color: rgb(4, 176, 219);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.color-picker-button:hover {
+  background-color: rgb(21, 203, 248);
+}
+
+.color-picker-dropdown {
+  position: absolute;
+  top: 6rem;
+  right: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin-top: 10px;
+}
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.ice {
+  background-color: rgb(175, 223, 235);
+}
+
+.pink {
+  background-color: rgb(252, 178, 236);
+}
+
+.orange {
+  background-color: rgb(231, 132, 2);
+}
+
+.red {
+  background-color: rgb(160, 0, 0);
+}
+
+.blue {
+  background-color: rgb(3, 3, 182);
+}
+
+.black {
+  background-color: rgb(0, 0, 0);
+}
+
+// .color-icon {
+//   width: 40px;
+//   height: 40px;
+// }
+
+// .color-text {
+//   font-size: 16px;
+//   margin: 13px 20px 0 0;
+// }
+
+// .color-text:hover {
+//  color: rgb(202, 244, 255);
+// }

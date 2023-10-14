@@ -1,0 +1,27 @@
+{
+  "name": "react-fridge-management",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "seed": "node seed.js",
+    "start-backend": "json-server backend/database.json",
+    "start-backend-with-seeding": "node seed.js && json-server backend/database.json",
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.0.0",
+    "sass": "^1.63.6",
+    "vite": "^4.3.9",
+    "@faker-js/faker": "^8.0.2",
+    "json-server": "^0.17.3"
+  }
+}
