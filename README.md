@@ -22,7 +22,7 @@ Die Farbauswahl wird anschließend im Local Storage gespeichert.
 <br>
 <br>
 
-![Fridge Management App Screenshot](readme_assets/fridge-management_screen.png)
+![Fridge Management App Screenshot](readme_assets/fridge_management.png)
 <br>
 <br>
 
